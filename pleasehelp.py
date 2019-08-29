@@ -38,7 +38,7 @@
 #_
 # Print all properties to the console.
 
-
+# !! : you have a couple simple syntax erros. PLEASE read your errors and avoid something as small and obvious as missing a quotation mark
 
 class Movie:
     def __init__(self,movieName, rating, yearReleased):
@@ -46,19 +46,21 @@ class Movie:
         self.rating =rating
         self.yearReleased =yearReleased
 
+    # !! : you don't have a __str__ function 
+
 def problem1():
     movieanalysis1 = Movie ("ColorPurple", "RatedR", "1985")
     movieanalysis2 = Movie("BestMan", "RatedPg","1990")
-    movieanalysis1,movieanalysis2.printproblem1()
-
+    movieanalysis1,movieanalysis2.printproblem1() # !! : this is not how you call  a function on a method 
+    # !! : this is a variable 
     my_instance_str = f'Properties fr the Class movieName\n\n = {self.movieName}\n' \
                   f'rating = {self.rating}\n' \
                   f' yearReleased= {self.yearReleased_p}\n' \
 problem1()
 
-return my_instance_str
+return my_instance_str # !! : this is not inside of a function
 
-/2.
+/2. # !! : this should be commented out 
 class Plasticplates():
 
 def __init__(self, name , quantity, price):
@@ -67,18 +69,19 @@ def __init__(self, name , quantity, price):
     self.quantity = quantity
     self.price = price
 
-    def mywork(self):
+    def mywork(self): # !! : this should be a __str__ function 
         print(f"{self.name}, {self.price}, {self.quantity},")
 mywork():
 printmywork
 
 def problem2():
-    online1 = Plasticplates ("Paperplates",""$250.00","300")
-    online1 = Plasticplates ("Glassplates","$300.00","500)
+    online1 = Plasticplates ("Paperplates","$250.00","300") # !! : you had an extra quotation 
+    online1 = Plasticplates ("Glassplates","$300.00","500") # !! : you were missing a quotation
     online1.printmywork()
 
-    my_instance_str = f'Properties fr the Class Plasticplates\n\n = {self.name}\n' \
+    # !! : this is a variable 
+    my_instance_str = f'Properties fr the Class Plasticplates\n\n = {self.name}\n'
                       f'price = {self.price}\n'
-                      f'quantity= {self.quantity_p}\n
+                      f'quantity= {self.quantity_p}\n' # !! : you were missing a quotation
 problem2():
 printproblem2()
